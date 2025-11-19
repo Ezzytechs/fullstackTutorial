@@ -3,44 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Document</title>
+    <!-- this is internal css styling -->
     <style>
-      p {
-        color: #008000;
+      h1 {
+        color: rgb(255, 0, 0);
+      }
+      a {
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: right;
+      }
+
+      .nav {
+        width: 100%;
+        background: green;
+        text-align: right;
+        padding: 5px;
       }
     </style>
   </head>
   <body>
-    <bdo>This text will be written from right to left</bdo>
-    <p style="text-decoration: line-through">
-      The
-      <abbr style="text-decoration: dotted" title="World Health Organization"
-        >WHO</abbr
-      >
-      was founded in 1948.
-    </p>
+    <div class="nav">
+      <!-- this is nav bar with link and link bookmark -->
+      <a href="./Profile.html#aboutUs">Profile</a>
+      <a href="#aboutUs">About Us</a>
+    </div>
+    <!-- this is inline css style -->
+    <h1 style="color: green" id="up" class="target1">
+      tile for the main document 1
+    </h1>
+    <!-- this is html comment -->
+    <!-- <div style="height: 120vh; width: 400px; background: yellowgreen">
+      <h1>Im blocking view div</h1>
+    </div> -->
 
-    <address>
-      Written by John Doe.<br />
-      Visit us at:<br />
-      Example.com<br />
-      Box 564, Disneyland<br />
-      USA
-    </address>
-
-    <b> - Bold text </b> <br/>
-<span> - Bold text </span> <br/>
-<strong> - Important text<br/>
-<i> - Italic text</i><br/>
-<em> - Italic text </em><br/>
-<mark> - Marked text </mark> <br/>
-<small> - Smaller text </small><br/>
-<span> - Smaller text </span><br/>
-<del> - Deleted text</del><br/> 
-<ins> - Inserted text<br/>
-<sub> - Subscript text<br/>
-<sup> - Superscript text<br/>
-
+    <!-- //This is the targeted bookmark of the nav bar link -->
+    <div id="aboutUs">
+      <h1>About us</h1>
+      <a href="#up">About Us</a>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
